@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de multiplicar</title>
+    <script src="ejercicio2.js"></script>
+</head>
+<body>
+
+    <h1>Tabla de multiplicar</h1>
+
+    <input type="number" id="numero" placeholder="Ingrese un número">
+
+    <input type="number" id="hasta" placeholder="Hasta (máximo 20)">
+
+    <button onclick="
+        const numero = Number(document.getElementById('numero').value);
+        const hasta = Number(document.getElementById('hasta').value);
+
+        if (hasta >= 1 && hasta <= 20) {
+            document.getElementById('resultado').innerHTML = generarTabla(numero, hasta);
+        } else {
+            document.getElementById('resultado').textContent = 'Ingrese un límite entre 1 y 20';
+        }
+    ">Generar tabla</button>
+
+    <div id="resultado"></div>
+
+</body>
+</html>

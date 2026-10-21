@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifa de parqueadero</title>
+    <script src="ejercicio4.js"></script>
+</head>
+<body>
+
+    <h1>Tarifa de parqueadero</h1>
+
+    <input type="number" id="minutos" placeholder="Ingrese minutos">
+
+    <button onclick="
+        const minutos = Number(document.getElementById('minutos').value);
+        const resultado = calcularTarifa(minutos);
+
+        document.getElementById('resultado').textContent =
+            'Total a pagar: $' + resultado.toFixed(2);
+    ">Calcular tarifa</button>
+
+    <p id="resultado"></p>
+
+</body>
+</html>

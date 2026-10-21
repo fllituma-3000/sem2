@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="ejercicio3.js"></script>
+</head>
+<body>
+
+    <h1>Calculadora</h1>
+
+    <input type="number" id="numero1" placeholder="Primer número">
+
+    <select id="operador">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">×</option>
+        <option value="/">÷</option>
+    </select>
+
+    <input type="number" id="numero2" placeholder="Segundo número">
+
+    <button onclick="
+        const a = Number(document.getElementById('numero1').value);
+        const b = Number(document.getElementById('numero2').value);
+        const operador = document.getElementById('operador').value;
+
+        const resultado = operar(a, b, operador);
+
+        document.getElementById('resultado').textContent = resultado;
+    ">Calcular</button>
+
+    <p id="resultado"></p>
+
+</body>
+</html>

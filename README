@@ -1,0 +1,7 @@
+#Reflexion 
+Coviene usar switch en lugar de if cuando evaluamos una sola variable contra multples valores fijos, ya que el código resulta 
+más limpio y legible. 
+Dividir el codigo en funciones pequeñas mejora la modularidad, facilita la reutilización, simplifica las pruebas y ayuda a depurar
+errores de forma aislada.
+Para esta tare utilize asistencia de IA (GEMINI) como apoyo conceptual en la estructura de la lógica
+ y la validacion de funciones con return. 
